@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Book PDF</title>
+</head>
+<body>
+<table width="840">
+    <tr>
+        <td>   
+    <h1>Immigration au Canada</h1>
+    <h2><mark>R&#234;ve au Cauchemar</mark></h2>
+    <div id="author">Tokpa Clever Listen</div>
+    <div id="publisher"><a href="https://www.librairiecoiffard.fr/livre/1891257-immigration-au-canada-du-reve-au-cauchemar-tokpa-clever-listen-menaibuc" target="_blank">Les &#201ditions M&#233naibuc</a></div>
+    <div id="buyAmazon"><a href="https://www.amazon.fr/Immigration-Canada-Du-r%C3%AAve-cauchemar/dp/235349157X" target="_blank">Amazon Book</a></div>
+    <p>Click the link below to open the book:</p>
+    <a href="file:///C:/Users/ENFANT/Desktop/tokpa_clever_listen/immigration_au_canada_cauchemard/immigration%20au%20Canada%20du%20reve%20au%20cauchemar%20tokpa.pdf" target="_blank">Open Book</a>
+
+    <h2>Jump to a Page</h2>
+    <form id="jumpForm">
+        <label for="pageNumber">Enter Page Number:</label>
+        <input type="number" id="pageNumber" name="pageNumber" min="1">
+            <button type="submit">Go</button>
+    </form>
+
+    <script>
+        document.getElementById('jumpForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const pageNumber = document.getElementById('pageNumber').value;
+                window.open(`file:///C:/Users/ENFANT/Desktop/tokpa_clever_listen/immigration_au_canada_cauchemard/Immigration%20au%20Canada%20Du%20reve%20au%20cauchemar%20tokpa.pdf#page=${pageNumber}`, '_blank');
+            }
+        );
+    </script></td>
+    <td width="450">
+        <div>Quatri&#232;me de couverture</div>
+        <p>L&#39;idéalisation de la vie trouve aussi son expression dans le rêve. 
+            C&#39;est ce rêve&#44; légitime&#44; qui pousse&#44; aujourd&#39;hui des milliers d&#39;Africains 
+            et surtout les jeunes&#44; pris dans le tourbillon infernal de l&#39;existence&#44; 
+            à s&#39;éloigner de leurs terres natales dans l&#39;espoir de trouver une vie meilleure 
+            sous d&#39;autres cieux en Europe ou en Amérique.</p>
+        <p>Le Canada est vanté aujourd&#39;hui dans le monde comme l&#39;eldorado 
+            de « l&#39;immigration choisie »&#44; où chaque arrivant&#44; 
+            sans coup férir&#44; pourrait se faire une place au soleil. 
+            En réalité&#44; il s&#39;agit d&#39;une situation de mirage&#44; où l&#39;immigrant&#44; 
+            quelles que soient ses compétences universitaires et académiques&#44; est ravalé&#44; 
+            sur le marché du travail&#44; au rang de « l&#39;esclave moderne » qui ne dit pas son nom.
+            </p>
+        <p>La situation est particulièrement dramatique dans la province du Québec&#44; 
+            où l&#39;auteur Tokpa Clever Listen avec ses diplômes universitaires&#44; en a 
+            fait l&#39;amère expérience&#44; après avoir abandonné sa vie de bonheur au Japon.
+        </p> 
+        <p>Ce récit poignant&#44; qui décrit l&#39;enfer vécu au Québec par  l&#39;auteur&#44; 
+            est non seulement un cri de révolte&#44; mais aussi un appel destiné à 
+            sensibiliser et à mettre en garde les candidats à l&#39;immigration 
+            contre  ce qu&#39;on appellerait le miroir aux alouettes canadien. 
+        </p>
+    </td>
+</tr>
+</table>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book PDF</title>
+</head>
+<body>
+    <h1>Immigration au Canada</h1>
+    <h2>Du Reve au Cauchemar</h2>
+    <div id="author">Tokpa Clever Listen</div>
+    <p>Click the link below to open the book:</p>
+    <a href="file:///C:/Users/ENFANT/Desktop/tokpa_clever_listen/immigration_au_canada_cauchemard/immigration%20au%20Canada%20du%20reve%20au%20cauchemar%20tokpa.pdf" target="_blank">Open Book</a>
+
+    <h2>Jump to a Page</h2>
+    <form id="jumpForm">
+        <label for="pageNumber">Enter Page Number:</label>
+        <input type="number" id="pageNumber" name="pageNumber" min="1">
+            <button type="submit">Go</button>
+    </form>
+
+    <script>
+        document.getElementById('jumpForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const pageNumber = document.getElementById('pageNumber').value;
+                window.open(`file:///C:/Users/ENFANT/Desktop/tokpa_clever_listen/immigration_au_canada_cauchemard/Immigration%20au%20Canada%20Du%20reve%20au%20cauchemar%20tokpa.pdf#page=${pageNumber}`, '_blank');
+            }
+        );
+    </script>
+</body>
+</html>

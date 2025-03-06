@@ -19,21 +19,27 @@
     <div id="buyAmazon"><a href="https://www.amazon.fr/Immigration-Canada-Du-r%C3%AAve-cauchemar/dp/235349157X" target="_blank">Amazon Book</a></div>
     <p>Click the link below to open the book:</p>
      <a href="https://github.com/velumvelum/immigration_canada_cauchemar/blob/main/immigration%20au%20Canada%20du%20reve%20au%20cauchemar.pdf" target="_blank">Open Book</a>   
-    <h2>Jump to a Page</h2>
+    
+ <h2>Jump to a Page</h2>
     <form id="jumpForm">
         <label for="pageNumber">Enter Page Number:</label>
         <input type="number" id="pageNumber" name="pageNumber" min="1">
-            <button type="submit">Go</button>
+        <button type="submit">Go</button>
     </form>
 
     <script>
         document.getElementById('jumpForm').addEventListener('submit', function(event) {
             event.preventDefault();
             const pageNumber = document.getElementById('pageNumber').value;
+            if (pageNumber) {
                 window.open(`https://github.com/velumvelum/immigration_canada_cauchemar/blob/main/immigration%20au%20Canada%20du%20reve%20au%20cauchemar.pdf#page=${pageNumber}`, '_blank');
             }
         });
-    </script></td>
+    </script>
+
+
+          
+        </td>
     <td width="450">
         <div>Quatri&#232;me de couverture</div>
         <p>L&#39;idéalisation de la vie trouve aussi son expression dans le rêve. 
